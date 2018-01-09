@@ -1,0 +1,35 @@
+{
+  "name": "cp2-frontend",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Tawakalt/cp2-frontend.svg?branch=develop)](https://travis-ci.org/Tawakalt/cp2-frontend) [![Maintainability](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/maintainability)](https://codeclimate.com/github/Tawakalt/cp2-frontend/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/test_coverage)](https://codeclimate.com/github/Tawakalt/cp2-frontend/test_coverage)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tawakalt/cp2-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tawakalt/cp2-frontend/issues"
+  },
+  "homepage": "https://github.com/Tawakalt/cp2-frontend#readme",
+  "dependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}
