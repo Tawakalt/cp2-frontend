@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "build": "webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
-    "postinstall": "webpack -p && cp src/server.js dist/server.js"
+    "postinstall": "webpack -p --config=webpack.prod.config.js && cp src/server.js dist/server.js"
   },
   "repository": {
     "type": "git",
