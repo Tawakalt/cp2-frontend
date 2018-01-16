@@ -1,0 +1,57 @@
+{
+  "name": "cp2-frontend",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Tawakalt/cp2-frontend.svg?branch=develop)](https://travis-ci.org/Tawakalt/cp2-frontend) [![Maintainability](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/maintainability)](https://codeclimate.com/github/Tawakalt/cp2-frontend/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/test_coverage)](https://codeclimate.com/github/Tawakalt/cp2-frontend/test_coverage)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "build": "webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "postinstall": "webpack -p && cp src/server.js dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tawakalt/cp2-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tawakalt/cp2-frontend/issues"
+  },
+  "homepage": "https://github.com/Tawakalt/cp2-frontend#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.4",
+    "html-webpack-plugin": "^2.30.1",
+    "node-env-file": "^0.1.8",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
