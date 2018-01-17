@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "[![Build Status](https://travis-ci.org/Tawakalt/cp2-frontend.svg?branch=develop)](https://travis-ci.org/Tawakalt/cp2-frontend) [![Maintainability](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/maintainability)](https://codeclimate.com/github/Tawakalt/cp2-frontend/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/9ea2fa33735f1f097f5f/test_coverage)](https://codeclimate.com/github/Tawakalt/cp2-frontend/test_coverage)",
   "main": "index.js",
+  "engines": {
+    "node": "6.10.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "build": "webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
-    "postinstall": "webpack -p && cp src/server.js dist/server.js"
+    "postinstall": "webpack -p --config=webpack.prod.config.js && cp src/server.js dist/server.js"
   },
   "repository": {
     "type": "git",
