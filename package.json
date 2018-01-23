@@ -7,10 +7,27 @@
     "node": "6.10.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage -u",
     "start": "node dist/server.js",
     "build": "webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
     "postinstall": "webpack -p --config=webpack.prod.config.js && cp src/server.js dist/server.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/browserMocks.js"
+    ],
+    "modulePaths": [
+      "/shared/vendor/modules"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ]
   },
   "repository": {
     "type": "git",
@@ -49,12 +66,17 @@
     "webpack": "^3.10.0"
   },
   "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "jest": "^20.0.4",
+    "sinon": "^4.2.0",
     "webpack-dev-server": "^2.4.5"
   }
 }
