@@ -8,5 +8,7 @@ after_success:
   - npm install -g codeclimate-test-reporter
   - codeclimate-test-reporter < ./coverage/lcov.info
 before_install:
-  npm i -g npm@3
-  npm i -g node@6
+  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
+
+install:
+  - npm install
